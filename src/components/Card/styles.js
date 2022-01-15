@@ -1,8 +1,9 @@
 import {StyleSheet} from 'react-native';
+import theme from '../../utils/constants/theme';
 
 const styles = StyleSheet.create({
   card: {
-    backgroundColor: '#0000ff',
+    backgroundColor: theme.color1,
     display: 'flex',
     width: '70%',
     alignItems: 'center',
@@ -10,7 +11,7 @@ const styles = StyleSheet.create({
     flexWrap: 'wrap',
   },
   text: {
-    color: '#fff',
+    color: theme.color3,
     fontSize: 30,
     padding: 10,
     margin: 20,
@@ -23,10 +24,14 @@ const styles = StyleSheet.create({
   },
   button: {
     width: '50%',
-    backgroundColor: '#ccc',
+    backgroundColor: theme.color2,
     padding: 10,
     display: 'flex',
-    alignItems: 'center'
+    alignItems: 'center',
+    text: {
+      fontSize:15,
+      color: theme.fontColor
+    }
   },
 });
 

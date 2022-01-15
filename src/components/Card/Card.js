@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import {Text, TextInput, TouchableOpacity, View} from 'react-native';
 
 import styles from './styles';
+import theme from '../../utils/constants/theme';
 
 const Card = ({setSelectedNumber, selectedNumber}) => {
   const [number, setNumber] = useState();
@@ -17,7 +18,7 @@ const Card = ({setSelectedNumber, selectedNumber}) => {
     <View style={styles.card}>
       <TextInput
         placeholder="number"
-        placeholderTextColor="#acf"
+        placeholderTextColor={theme.color3}
         style={styles.text}
         keyboardType="numeric"
         maxLength={2}
@@ -26,12 +27,12 @@ const Card = ({setSelectedNumber, selectedNumber}) => {
       />
       <View style={styles.btnContainer}>
         <TouchableOpacity style={styles.button} onPress={() => resetNumber()}>
-          <Text>Clean</Text>
+          <Text style={styles.button.text}>Clean</Text>
         </TouchableOpacity>
         <TouchableOpacity
           style={styles.button}
           onPress={() => confirmNumber(number)}>
-          <Text>Confirm</Text>
+          <Text style={styles.button.text}>Confirm</Text>
         </TouchableOpacity>
       </View>
     </View>

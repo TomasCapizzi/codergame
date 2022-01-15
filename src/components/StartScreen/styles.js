@@ -1,4 +1,5 @@
 import {StyleSheet} from 'react-native';
+import theme from '../../utils/constants/theme';
 
 const styles = StyleSheet.create({
   container: {
@@ -9,22 +10,21 @@ const styles = StyleSheet.create({
   },
   button: {
     marginVertical: 15,
-    backgroundColor: 'pink',
+    backgroundColor: theme.color1,
     padding: 8,
     borderRadius: 5,
     marginVertical: 45,
     textBtn: {
       fontSize: 20,
-      color: 'cornflowerblue',
-      fontFamily: 'Pacifico-Regular'
+      color: theme.color3,
+      fontFamily: 'Pacifico-Regular',
     },
   },
   text: {
     margin: 20,
-    color: 'cornflowerblue',
+    color: theme.color2,
     fontSize: 20,
-    fontWeight: 'bold',
-    fontFamily: 'Cabin-Medium',
+    fontFamily: 'Cabin-Bold',
   },
 });
 

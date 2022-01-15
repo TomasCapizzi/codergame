@@ -4,7 +4,15 @@ import React from 'react';
 import styles from './styles';
 
 const Results = ({result, lifes}) => {
-  return <View>{result !== '' && <Text>Your choice was {result}. You have {lifes} left</Text>}</View>;
+  return (
+    <View>
+      {result !== '' && (
+        <Text style={styles.text}>
+          Your choice was {result}. You have {lifes} left
+        </Text>
+      )}
+    </View>
+  );
 };
 
 export default Results;

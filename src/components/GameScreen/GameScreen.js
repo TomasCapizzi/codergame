@@ -56,13 +56,13 @@ const GameScreen = ({setGameOn, setSelectedNumber, selectedNumber}) => {
           <BetButtons lowerBet={lowerBet} higherBet={higherBet} />
         </>
       ) : (
-        <Image source={gameOverImg} />
+        <Image source={gameOverImg} style={styles.img} />
       )}
 
       <Results result={result} lifes={lifes} />
-      <Text>Score: {moves}</Text>
+      <Text style={styles.text}>Score: {moves}</Text>
       <TouchableOpacity style={styles.button} onPress={endGame}>
-        <Text>Quit</Text>
+        <Text style={styles.button.text}>Quit</Text>
       </TouchableOpacity>
     </View>
   );

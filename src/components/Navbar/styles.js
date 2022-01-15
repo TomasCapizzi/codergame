@@ -1,9 +1,9 @@
 import {StyleSheet} from 'react-native';
+import theme from '../../utils/constants/theme';
 
 const styles = StyleSheet.create({
   navbar: {
-    color: '#fff',
-    backgroundColor: 'cornflowerblue',
+    backgroundColor: theme.color2,
     padding: 15,
     height: 100,
     display: 'flex',
@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     text: {
       fontSize: 30,
-      color: '#fff',
+      color: theme.fontColor,
       fontFamily: 'Pacifico-Regular'
     },
   },
